@@ -8,6 +8,7 @@ let nextRandom = 0
 let timerId = null
 let score = 0
 let h2Score = document.getElementById("score-header")
+var aud = document.querySelector('#myAudio')
 
 const lTetromino = [
     [1, width + 1, width*2 + 1, 2],
@@ -149,9 +150,11 @@ function displayShape() {
 
 startButton.addEventListener("click", () => {
     if (timerId) {
+         aud.pause()
         clearInterval(timerId)
         timerId = null
     } else {
+        aud.play()
         draw()
         timerId = setInterval(moveDown, 1000)
        // nextRandom = Math.floor(Math.random() * theTetrominoes.length)
