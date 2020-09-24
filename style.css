@@ -1,0 +1,67 @@
+   *{
+       margin:0;
+       padding:0;
+    }
+
+    body{
+        position:relative;
+    }
+
+
+   .container{
+       margin-left:25%;
+   }
+    .grid{
+        
+        width:300px;
+        height:600px;
+        background-color:yellow;
+        display : flex;
+        flex-flow: row wrap;
+      
+    }
+.score-div {
+    position: absolute;
+
+    width: 15%;
+    height: 30vh;
+    left: 5%;
+    top: 25%;
+}
+
+.grid div {
+    height: 30px;
+    width: 30px;
+}
+
+
+#start-button{
+    margin-top:10px;
+}
+
+.tetromino {
+    background-color: blue;
+}
+    .taken{
+        background-color:black;
+    }
+    .mini-grid{
+        width:120px;
+        height:120px;
+        display:flex;
+        flex-flow:row wrap;
+        background-color:aquamarine;
+        margin-left:25px;
+    }
+    .mini-grid div{
+        width:30px;
+        height:30px;
+    }
+.container {
+    display: flex;
+    margin-top: 10px;
+}
+#rules {
+    margin: 10px;
+}
+
